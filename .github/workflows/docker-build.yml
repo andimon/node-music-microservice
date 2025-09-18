@@ -322,8 +322,7 @@ jobs:
 
       - name: Install semantic-release
         run: |
-          npm install -g semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/github conventional-changelog-conventionalcommits
-
+          npm install -g semantic-release@21.1.2 @semantic-release/changelog@6.0.3 @semantic-release/git@10.0.1 @semantic-release/github@9.2.1 conventional-changelog-conventionalcommits@6.1.0
       - name: Configure semantic-release
         run: |
           cat > .releaserc.json << 'EOF'
